@@ -1,0 +1,24 @@
+---
+  # mainnav: MEN
+  # eventname: Lucky Brand Men
+  # productgridtitle: Marina Hoodie
+  # saleprice: $39.97
+  # retailprice: $79.50
+  # percentageoff: 50% Off
+  # size: L
+  # qty: 1
+  # color: nil
+  mainnav: WOMEN
+  eventname: True Religion
+  productgridtitle: Linda Moto Jean
+  saleprice: $89.97
+  retailprice: $198.00
+  percentageoff: 55% Off
+  size: 25
+  qty: 2
+  color: nil
+  checkout_heading: Checkout
+  totalitems: 2 Items
+  returns: Returnable
+  site: Hautelook
+  color_2: ACN BLACK
