@@ -1,12 +1,5 @@
 ---
-  url: dev.hautelook.com
-  browser: firefox
+  url: nordstromrack.com
+  browser: phantomjs
   username: test@user.com
   password: 12345678
-  gender: gender_male
-  zipcode: 90045
-  country: United States
-  firstname: ravi
-  lastname: trivedi
-  checkout_user: checkouttestuser@test.com
-  checkout_password: test123

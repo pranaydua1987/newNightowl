@@ -1,9 +1,0 @@
----
-  browser: phantomjs
-  username: test@user.com
-  password: 12345678
-  url: hautelook.com
-  #register
-  email: ddudududud303@example.com
-  password: test123
-  #register

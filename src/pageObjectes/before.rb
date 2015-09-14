@@ -27,15 +27,15 @@
      $browser.span(:class => "secondary-nav__link secondary-nav__link--hautelook").wait_until_present(20)
    end
 
-   def self.register_hautelook(email,password)
-     $method = __method__
-     $browser.text_field(:id => "firstname").set $config["firstname"]
-     $browser.text_field(:id => "lastname").set $config["lastname"]
-     $browser.text_field(:id => "email").set email
-     $browser.text_field(:id => "signup_password").set password
-     $browser.radio(:id => "#{$config["gender"]}").click
-     $browser.text_field(:id => "zip_code").set $config["zipcode"]
-     $browser.select_list(:id => "country").select $config["country"]
-     $browser.div(:id => "register_btn").click
-   end
+  #  def self.register_hautelook(email,password)
+  #    $method = __method__
+  #    $browser.text_field(:id => "firstname").set $config["firstname"]
+  #    $browser.text_field(:id => "lastname").set $config["lastname"]
+  #    $browser.text_field(:id => "email").set email
+  #    $browser.text_field(:id => "signup_password").set password
+  #    $browser.radio(:id => "#{$config["gender"]}").click
+  #    $browser.text_field(:id => "zip_code").set $config["zipcode"]
+  #    $browser.select_list(:id => "country").select $config["country"]
+  #    $browser.div(:id => "register_btn").click
+  #  end
  end
