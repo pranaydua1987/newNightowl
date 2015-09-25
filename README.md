@@ -8,7 +8,7 @@ Run all the test cases.
 
 Run specific test cases.
 
-###### ``` ./nightowl /tests/rack/test1.rb```
+###### ``` ./nightowl tests/rack/test1.rb```
 #### or  
 ##### ``` ./nightowl tests/rack/test1.rb tests/test2.rb```
 
