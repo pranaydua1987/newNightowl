@@ -61,6 +61,8 @@ req_config(@configfile)
                     total = Time.now() - start
                     puts "\e[32mPASSED!, Execution Time #{total} \e[0m"
                   rescue Exception => e
+                    b_type = $browser.driver.browser
+                    puts "\e[1mBrowser: #{b_type} \e[0m"
                     puts "\e[1m#{$method}: \e[0m \e[31m FAILED! \e[0m"
                     puts "\e[1merror_message: \e[31m  #{e} \e[0m"
                     # $error = "yes"
@@ -86,6 +88,8 @@ req_config(@configfile)
                 total = Time.now() - start
                 puts "\e[32mPASSED!, Execution Time #{total} \e[0m"
               rescue Exception => e
+                b_type = $browser.driver.browser
+                puts "\e[1mBrowser: #{b_type} \e[0m"
                 puts "\e[1m#{$method}: \e[0m \e[31m FAILED! \e[0m"
                 puts "\e[1merror_message: \e[31m  #{e} \e[0m"
                 # $error = "yes"
@@ -119,11 +123,17 @@ req_config(@configfile)
             $p_count = $p_count + 1
             $error = "no"
           rescue Exception => e
+
+            new_e = e.backtrace.join("\n")
+              new_ee = new_e.split("'")
+              $new_e = new_ee[2]
+
             print "\e[1m\e[31mF\e[0m"
+            b_type = $browser.driver.browser
             # puts "\e[1m    #{$method}: \e[0m \e[31m FAILED! \e[0m"
             # puts "\e[1m    error_message: \e[31m  #{e} \e[0m"
             $error = "yes"
-            $error_log[$method] = e
+            $error_log["#{$method} #{b_type} #{rb_file}"] = e
             # hash_count = hash_count + 1
             @command = nil
             $browser.quit
@@ -139,12 +149,19 @@ if $error == "yes"
     puts "\n"
     puts "\n"
     puts "\n"
-    puts "\e[33m Error Log: \e[0m"
+    puts "\e[1m\e[33m Error Log: \e[0m"
+    i = 1
     $error_log.each do |print_key,print_value|
-    puts "\n"
-    puts "\e[1m Method: #{print_key} \e[0m"
-    puts "\e[31m #{print_value} \e[0m"
-    puts "\n"
+      meth,brow,testcase = print_key.split(" ")
+      puts "\n"
+      puts "\e[1m #{i}) \e[0m"
+      puts "\e[1m Test: #{testcase} \e[0m"
+      puts "\e[1m Method: #{meth} \e[0m"
+      puts "\e[1m Browser: #{brow} \e[0m"
+      puts "\e[1m\e[31m #{print_value} \e[0m"
+      print "\e[1m\e[31m #{$new_e} \e[0m"
+      puts "\n"
+      i = i + 1
     end
     puts "\n"
     puts "\e[1m Total Scenario : #{$test_count}. \e[1m \e[32m Passed: #{$p_count}. \e[1m \e[31m Failed: #{$f_count}. \e[0m"
