@@ -1,6 +1,8 @@
 #! /usr/bin/env ruby
 require 'yaml'
 require 'watir-webdriver'
+require 'test/unit'
+include Test::Unit::Assertions
 
 @test_folder = File.expand_path(Dir.pwd)
 $base_path = @test_folder
