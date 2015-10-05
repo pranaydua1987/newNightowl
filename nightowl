@@ -1,8 +1,15 @@
 #! /usr/bin/env ruby
 require 'yaml'
 require 'watir-webdriver'
+require 'test/unit'
+
+include Test::Unit::Assertions
 
 @test_folder = File.expand_path(Dir.pwd)
+$base_path = @test_folder
+$data_path = "#{@test_folder}/src/bin/data/"
+$page_object_path = "#{@test_folder}/src/pageObjects"
+$test_path = "#{@test_folder}/tests"
 
 arg_array = ARGV.to_a
 if (arg_array.size) > 0
@@ -22,7 +29,7 @@ $p_count = 0
 @configfile = "#{@test_folder}/config.yaml"
 
 def self.req_all_scripts
-  Dir.glob("#{@test_folder}/src/pageObjectes/**/*.rb") do |require_all|
+  Dir.glob("#{@test_folder}/src/pageObjects/**/*.rb") do |require_all|
     require_relative require_all
   end
 end
