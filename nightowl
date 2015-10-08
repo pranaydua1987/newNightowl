@@ -2,6 +2,7 @@
 require 'yaml'
 require 'watir-webdriver'
 require 'test/unit'
+require 'mysql2'
 include Test::Unit::Assertions
 
 @test_folder = File.expand_path(Dir.pwd)
@@ -27,6 +28,12 @@ $test_count = 0
 $f_count = 0
 $p_count = 0
 @configfile = "#{@test_folder}/config.yaml"
+
+def self.client(db_host,db_user,db_pass,db_name)
+  $mysql_client = Mysql2::Client.new(
+    host: db_host, username: db_user, password: db_pass, database: db_name
+  )
+end
 
 def self.req_all_scripts
   Dir.glob("#{@test_folder}/src/pageObjects/**/*.rb") do |require_all|
@@ -68,13 +75,15 @@ req_config(@configfile)
                     total = Time.now() - start
                     puts "\e[32mPASSED!, Execution Time #{total} \e[0m"
                   rescue Exception => e
-                    b_type = $browser.driver.browser
+                    if ($browser.nil? == false)
+                      b_type = $browser.driver.browser
+                      $browser.quit
+                    end
                     puts "\e[1mBrowser: #{b_type} \e[0m"
                     puts "\e[1m#{$method}: \e[0m \e[31m FAILED! \e[0m"
                     puts "\e[1merror_message: \e[31m  #{e} \e[0m"
                     # $error = "yes"
                     $error_log[$method] = e
-                    $browser.quit
                     next
                 end
             end
@@ -95,13 +104,16 @@ req_config(@configfile)
                 total = Time.now() - start
                 puts "\e[32mPASSED!, Execution Time #{total} \e[0m"
               rescue Exception => e
-                b_type = $browser.driver.browser
+                if ($browser.nil? == false)
+                  b_type = $browser.driver.browser
+                  $browser.quit
+                end
                 puts "\e[1mBrowser: #{b_type} \e[0m"
                 puts "\e[1m#{$method}: \e[0m \e[31m FAILED! \e[0m"
                 puts "\e[1merror_message: \e[31m  #{e} \e[0m"
                 # $error = "yes"
                 $error_log[$method] = e
-                $browser.quit
+
                 next
               end
           end
@@ -136,14 +148,16 @@ req_config(@configfile)
               $new_e = new_ee[2]
 
             print "\e[1m\e[31mF\e[0m"
-            b_type = $browser.driver.browser
+            if ($browser.nil? == false)
+              b_type = $browser.driver.browser
+              $browser.quit
+            end
             # puts "\e[1m    #{$method}: \e[0m \e[31m FAILED! \e[0m"
             # puts "\e[1m    error_message: \e[31m  #{e} \e[0m"
             $error = "yes"
             $error_log["#{$method} #{b_type} #{rb_file}"] = e
             # hash_count = hash_count + 1
             @command = nil
-            $browser.quit
             $f_count = $f_count + 1
             next
           end
