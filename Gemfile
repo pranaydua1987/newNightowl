@@ -1,0 +1,11 @@
+source "https://rubygems.org"
+gem 'httparty'
+gem 'json'
+gem 'watir-webdriver'
+gem 'phantomjs'
+gem 'yajl-ruby'
+gem 'json-compare'
+gem 'mysql2'
+gem 'headless'
+gem 'test-unit'
+gem "httparty_with_cookies"

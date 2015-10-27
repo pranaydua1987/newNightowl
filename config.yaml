@@ -1,0 +1,7 @@
+---
+  qa_url: https://qa-workflow1.dc1.lam.hautelook.net/login
+  browserph: phantomjs
+  browserff: firefox
+  browserch: chrome
+  username: pranay.dua@hautelook.com
+  password: Welcome1!
