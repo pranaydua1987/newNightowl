@@ -8,3 +8,6 @@ gem 'json-compare'
 gem 'mysql2'
 gem 'headless'
 gem 'test-unit'
+gem "httparty_with_cookies"
+gem 'date'
+gem 'rubysl-enumerator'
