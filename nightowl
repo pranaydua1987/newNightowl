@@ -10,11 +10,15 @@ $base_path = @test_folder
 $data_path = "#{@test_folder}/src/bin/data/"
 $page_object_path = "#{@test_folder}/src/pageObjects"
 $test_path = "#{@test_folder}/tests"
+$folder_path = "noPath"
 
 
 arg_array = ARGV.to_a
 if (arg_array.size) > 0
-  if arg_array[0] != "--skip"
+  if File.directory? (arg_array[0])
+    @command = "folder"
+    $folder_path = arg_array[0]
+  elsif arg_array[0] != "--skip"
     @command = "run"
   else
       @command = arg_array[0]
@@ -117,6 +121,55 @@ req_config(@configfile)
                 next
               end
           end
+      when "folder"
+        Dir.glob("#{$folder_path}**/*.rb") do |rb_file|
+        $test_count = $test_count + 1
+        @rb_file_name = File.basename(rb_file,File.extname(rb_file))
+        @yaml_path = rb_file.sub("#{@test_folder}/tests","")
+        @yaml_path = @yaml_path.sub(".rb",".yaml")
+        @yaml_path = "#{@test_folder}/src/bin/data#{@yaml_path}"
+        begin
+          # puts "\n"
+          # puts "\n"
+          # puts "\e[36m Now running: #{rb_file} \e[0m"
+          req_all_data_files(@yaml_path)
+          start = Time.now()
+          # puts "#{rb_file}"
+          begin
+            load "#{rb_file}"
+          rescue => e
+            puts e
+          end
+          total = Time.now() - start
+          # $stdout.flush
+          print "\e[1m\e[32m.\e[0m"
+          if $test_count == 100
+            puts ""
+          end
+          # puts "\e[32m    PASSED!, Execution Time #{total} \e[0m"
+          $p_count = $p_count + 1
+          $error = "no"
+        rescue Exception => e
+
+          new_e = e.backtrace.join("\n")
+            new_ee = new_e.split("'")
+            $new_e = new_ee[2]
+
+          print "\e[1m\e[31mF\e[0m"
+          if ($browser.nil? == false)
+            b_type = $browser.driver.browser
+            $browser.quit
+          end
+          # puts "\e[1m    #{$method}: \e[0m \e[31m FAILED! \e[0m"
+          # puts "\e[1m    error_message: \e[31m  #{e} \e[0m"
+          $error = "yes"
+          $error_log["#{$method} #{b_type} #{rb_file}"] = e
+          # hash_count = hash_count + 1
+          @command = nil
+          $f_count = $f_count + 1
+          next
+        end
+       end
       else
           Dir.glob("#{@test_folder}/tests/**/*.rb") do |rb_file|
           $test_count = $test_count + 1
