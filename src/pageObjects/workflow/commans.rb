@@ -31,8 +31,13 @@ puts existingSkuCount
  assert_equal(existingSkuCount,expectedExistingSkuCount)
   end
   def self.query_results(query)
+<<<<<<< HEAD
     #mysql_client("10.224.5.188","hautelook","hautelook","hautelook")
 qq=$mysql_client.query(query)
+=======
+    mysql_client("10.224.5.188","hautelook","hautelook","hautelook")
+qq=$mysql_client .query(query)
+>>>>>>> 636a36c178c24232f2a1aac73363ee085e0d6ba1
 return qq
 end
 

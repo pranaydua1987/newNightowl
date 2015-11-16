@@ -38,7 +38,10 @@ class Json_Functions
     newf, oldf = Yajl::Parser.parse(json1), Yajl::Parser.parse(json2)
     result = JsonCompare.get_diff(oldf, newf)
     if (result.size >0)
-     Json_Functions.createJSONFile(fullpath,prettyJSON(result))
+
+    #  Json_Functions.createJSONFile(fullpath,prettyJSON(result))
+
+     Json_Functions.createJSONFile(fullpath,result)
   end
   end
 end

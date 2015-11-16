@@ -13,11 +13,14 @@ class Dashboard
     # $browser.a(:href =>"/reports").exist?
     # browser.h1(:xpath, "//a[contains(text(),\"Dashboard\")]").exist?
   end
+<<<<<<< HEAD
   def self.styles
     $method = __method__
     return $browser.a(:text => "Styles")
     
   end
+=======
+>>>>>>> 636a36c178c24232f2a1aac73363ee085e0d6ba1
   def self.table
   return $browser.element(:xpath => "//table")
 end

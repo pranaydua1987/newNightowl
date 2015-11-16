@@ -28,14 +28,16 @@ class Brand_api
       :headers => { auth => auth_code,auth_code => cont_type_code,cont_type => cont_type_code}
       )
     end
+
     def self.request_http(base_url,api_endpoint)
       #$hl_api_client = Hl_api_test.new
       $method = __method__
       # puts "Api_get_request"
     #  Brand_api.Login(base_url,username,password,auth,auth_code)
-    puts "#{base_url}#{api_endpoint}"
+      puts "#{base_url}#{api_endpoint}"
       $hl_api_client.get("#{base_url}#{api_endpoint}")
     end
+
     def self.add_cart_item(base_url,api_endpoint,auth,auth_code,cont_type,cont_type_code,event_id,sku,quantity)
       $method = __method__
       # puts "inside add cart item"
@@ -48,13 +50,15 @@ class Brand_api
       # puts auth_code
       # res=Brand_api.Login($test_data['base_url'][0],$test_data['username'],$test_data['password'],$test_data['auth'],$test_data['auth_code'])
       # puts res
-      begin
-   puts $hl_api_client.post("#{base_url}#{api_endpoint}",
+
+  begin
+    puts $hl_api_client.post("#{base_url}#{api_endpoint}",
           :body => { "eventId" => event_id, "sku" => sku , "quantity" => quantity },
           :headers => { auth => auth_code}
           )
           # puts res5.code
  end
+
   rescue => e
     puts e
   end

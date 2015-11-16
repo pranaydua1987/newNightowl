@@ -10,10 +10,13 @@ class Stylesgridpageobject
       $method = __method__
   return $browser.a(:text =>"Add Style")
 end
+<<<<<<< HEAD
 def self.style_search
     $method = __method__
 return $browser.a(:href =>"/styles")
 end
+=======
+>>>>>>> 636a36c178c24232f2a1aac73363ee085e0d6ba1
 def self.click_on_Styles
     $method = __method__
 $browser.a(:text =>"Styles").click

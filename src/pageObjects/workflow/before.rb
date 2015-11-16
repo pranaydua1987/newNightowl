@@ -12,6 +12,7 @@
 
    def self.initialize_browser(browser,url)
      $method = __method__
+<<<<<<< HEAD
 #      download_directory = "#{Dir.pwd}/downloads"
 # download_directory.gsub!("/", "\\") if Selenium::WebDriver::Platform.windows?
 #
@@ -21,6 +22,8 @@
 # profile['browser.helperApps.neverAsk.saveToDisk'] = "text/csv,application/pdf"
 #
 # b = Watir::Browser.new :firefox, :profile => profile
+=======
+>>>>>>> 636a36c178c24232f2a1aac73363ee085e0d6ba1
      $browser = Watir::Browser.new :"#{browser}"
      $browser.goto url
      $browser.a(:text => "Sign In").wait_until_present

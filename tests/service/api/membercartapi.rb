@@ -60,7 +60,7 @@ puts $test_data['Post_api_endpoints'][j]
 end
 res1=Brand_api.Login($test_data['base_url'][0],$test_data['username'],$test_data['password'],$test_data['auth'],$test_data['auth_code'])
 puts res1
-puts "************************************************************"
+
 Brand_api.add_cart_item($test_data['base_url'][0],$test_data['Post_api_endpoints'][j],$test_data['auth'],$test_data['auth_code'],$test_data['cont_type'],
  $test_data['cont_type_code'],active_event_id,active_sku,"1")
  #puts res2.code
