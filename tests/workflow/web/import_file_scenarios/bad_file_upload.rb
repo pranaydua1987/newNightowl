@@ -5,4 +5,3 @@ Dashboard.icons_check
 Spreadsheetimport.importSpreadsheet($test_data['filename'])
 Spreadsheetimport.file_upload_verification($test_data['file_upload_error'])
 After.tear_down
-# Spreadsheetimport.badFileError.visible?
