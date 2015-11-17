@@ -2,118 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ed92b92-cbfa-4ba4-ae62-d64a33f74d1c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pageObjects/services/apiRequest.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pageObjects/workflow/popupModelTable.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/workflow/web/import_file_scenarios/badFileUpload.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/workflow/web/search_scenarios/emptySearch.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/workflow/web/search_scenarios/searchByEventId.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/workflow/web/search_scenarios/searchBySku.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/workflow/web/search_scenarios/searchByStyleId.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/workflow/web/search_scenarios/searchByStyleName.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/workflow/web/search_scenarios/searchByStyleNumber.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/workflow/web/search_scenarios/searchByUpc.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/workflow/web/search_scenarios/searchStylesByBrand.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pageObjects/services/api_request.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pageObjects/services/apirequest.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pageObjects/workflow/popup_model_table.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/workflow/web/import_file_scenarios/bad_file_upload.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/workflow/web/search_scenarios/empty_search.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/workflow/web/search_scenarios/search_by_event_id.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/workflow/web/search_scenarios/search_by_sku.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/workflow/web/search_scenarios/search_by_style_id.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/workflow/web/search_scenarios/search_by_style_name.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/workflow/web/search_scenarios/search_by_style_number.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/workflow/web/search_scenarios/search_by_upc.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/workflow/web/search_scenarios/searchstyles.rb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/bin/data/workflow/web/import_file_scenarios/bad_file_upload.yaml" afterPath="$PROJECT_DIR$/src/bin/data/workflow/web/import_file_scenarios/badFileUpload.yaml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/bin/data/workflow/web/search_scenarios/empty_search.yaml" afterPath="$PROJECT_DIR$/src/bin/data/workflow/web/search_scenarios/emptySearch.yaml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/bin/data/workflow/web/search_scenarios/search_by_event_id.yaml" afterPath="$PROJECT_DIR$/src/bin/data/workflow/web/search_scenarios/searchByEventId.yaml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/bin/data/workflow/web/search_scenarios/search_by_sku.yaml" afterPath="$PROJECT_DIR$/src/bin/data/workflow/web/search_scenarios/searchBySku.yaml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/bin/data/workflow/web/search_scenarios/search_by_style_id.yaml" afterPath="$PROJECT_DIR$/src/bin/data/workflow/web/search_scenarios/searchByStyleNumber.yaml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/bin/data/workflow/web/search_scenarios/search_by_style_name.yaml" afterPath="$PROJECT_DIR$/src/bin/data/workflow/web/search_scenarios/searchByStyleName.yaml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/bin/data/workflow/web/search_scenarios/search_by_style_number.yaml" afterPath="$PROJECT_DIR$/src/bin/data/workflow/web/search_scenarios/searchByStyleId.yaml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/bin/data/workflow/web/search_scenarios/search_by_upc.yaml" afterPath="$PROJECT_DIR$/src/bin/data/workflow/web/search_scenarios/searchByUpc.yaml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/bin/data/workflow/web/search_scenarios/searchstyles.yaml" afterPath="$PROJECT_DIR$/src/bin/data/workflow/web/search_scenarios/searchStylesByBrand.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.yaml" afterPath="$PROJECT_DIR$/config.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nightowl" afterPath="$PROJECT_DIR$/nightowl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/import_files/testng-Spreadsheetimport.xml" afterPath="$PROJECT_DIR$/src/bin/data/import_files/testng-Spreadsheetimport.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/import_files/testng-stdsize_management.xml" afterPath="$PROJECT_DIR$/src/bin/data/import_files/testng-stdsize_management.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/Orders_Api_Json/js1_events_event_id_catalog.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/Orders_Api_Json/js1_events_event_id_catalog.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/Orders_Api_Json/js1_members_10420380_orders.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/Orders_Api_Json/js1_members_10420380_orders.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/Orders_Api_Json/js1_members_10420380_orders_24707549.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/Orders_Api_Json/js1_members_10420380_orders_24707549.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/Orders_Api_Json/js1_members_10420380_orders_24707549_items.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/Orders_Api_Json/js1_members_10420380_orders_24707549_items.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/Orders_Api_Json/js1_members_10420380_orders_24707549_items_59478301.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/Orders_Api_Json/js1_members_10420380_orders_24707549_items_59478301.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/Orders_Api_Json/js2_events_event_id_catalog.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/Orders_Api_Json/js2_events_event_id_catalog.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/Orders_Api_Json/js2_members_10420380_orders.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/Orders_Api_Json/js2_members_10420380_orders.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/Orders_Api_Json/js2_members_10420380_orders_24707549.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/Orders_Api_Json/js2_members_10420380_orders_24707549.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/Orders_Api_Json/js2_members_10420380_orders_24707549_items.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/Orders_Api_Json/js2_members_10420380_orders_24707549_items.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/Orders_Api_Json/js2_members_10420380_orders_24707549_items_59478301.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/Orders_Api_Json/js2_members_10420380_orders_24707549_items_59478301.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/brand_search_endpoint/js1_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query=Dkny&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M&amp;colors[]=Black&amp;priceRanges[]=25-50.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/brand_search_endpoint/js1_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query=Dkny&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M&amp;colors[]=Black&amp;priceRanges[]=25-50.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/brand_search_endpoint/js1_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query=Dkny&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M&amp;colors[]=Black.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/brand_search_endpoint/js1_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query=Dkny&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M&amp;colors[]=Black.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/brand_search_endpoint/js1_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query=Dkny&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/brand_search_endpoint/js1_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query=Dkny&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/brand_search_endpoint/js2_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query=Dkny&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M&amp;colors[]=Black&amp;priceRanges[]=25-50.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/brand_search_endpoint/js2_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query=Dkny&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M&amp;colors[]=Black&amp;priceRanges[]=25-50.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/brand_search_endpoint/js2_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query=Dkny&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M&amp;colors[]=Black.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/brand_search_endpoint/js2_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query=Dkny&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M&amp;colors[]=Black.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/brand_search_endpoint/js2_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query=Dkny&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/brand_search_endpoint/js2_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query=Dkny&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/classification_endpoint/js1_catalog_classification?division=Men&amp;department=Clothing&amp;class=Shirts&amp;subclass=Casual.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/classification_endpoint/js1_catalog_classification?division=Men&amp;department=Clothing&amp;class=Shirts&amp;subclass=Casual.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/classification_endpoint/js1_catalog_classification?division=Men&amp;department=Clothing&amp;class=Shirts.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/classification_endpoint/js1_catalog_classification?division=Men&amp;department=Clothing&amp;class=Shirts.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/classification_endpoint/js1_catalog_classification?division=Men&amp;department=Clothing.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/classification_endpoint/js1_catalog_classification?division=Men&amp;department=Clothing.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/classification_endpoint/js1_catalog_classification?division=Men.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/classification_endpoint/js1_catalog_classification?division=Men.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/classification_endpoint/js2_catalog_classification?division=Men&amp;department=Clothing&amp;class=Shirts&amp;subclass=Casual.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/classification_endpoint/js2_catalog_classification?division=Men&amp;department=Clothing&amp;class=Shirts&amp;subclass=Casual.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/classification_endpoint/js2_catalog_classification?division=Men&amp;department=Clothing&amp;class=Shirts.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/classification_endpoint/js2_catalog_classification?division=Men&amp;department=Clothing&amp;class=Shirts.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/classification_endpoint/js2_catalog_classification?division=Men&amp;department=Clothing.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/classification_endpoint/js2_catalog_classification?division=Men&amp;department=Clothing.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/classification_endpoint/js2_catalog_classification?division=Men.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/classification_endpoint/js2_catalog_classification?division=Men.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/filter_endpoint/js1_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M&amp;colors[]=Black&amp;priceRanges[]=25-50.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/filter_endpoint/js1_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M&amp;colors[]=Black&amp;priceRanges[]=25-50.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/filter_endpoint/js1_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M&amp;colors[]=Black.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/filter_endpoint/js1_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M&amp;colors[]=Black.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/filter_endpoint/js1_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/filter_endpoint/js1_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/filter_endpoint/js2_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M&amp;colors[]=Black&amp;priceRanges[]=25-50.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/filter_endpoint/js2_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M&amp;colors[]=Black&amp;priceRanges[]=25-50.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/filter_endpoint/js2_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M&amp;colors[]=Black.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/filter_endpoint/js2_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M&amp;colors[]=Black.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/filter_endpoint/js2_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/filter_endpoint/js2_catalog_search_brand-data?division=Men&amp;department=Clothing&amp;class=Shirts&amp;query&amp;includeFlash=false&amp;includePersistent=true&amp;sizes[]=M.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js1_catalog_search?division=Men&amp;department=Clothing&amp;class=Shirts&amp;subclass=Casual&amp;colors[]=Black&amp;sizes[]=M.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js1_catalog_search?division=Men&amp;department=Clothing&amp;class=Shirts&amp;subclass=Casual&amp;colors[]=Black&amp;sizes[]=M.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js1_catalog_search?division=Men&amp;department=Clothing&amp;class=Shirts&amp;subclass=Casual&amp;colors[]=Black.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js1_catalog_search?division=Men&amp;department=Clothing&amp;class=Shirts&amp;subclass=Casual&amp;colors[]=Black.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js1_catalog_search?division=Men&amp;department=Clothing&amp;class=Shirts&amp;subclass=Casual.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js1_catalog_search?division=Men&amp;department=Clothing&amp;class=Shirts&amp;subclass=Casual.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js1_catalog_search?division=Men&amp;department=Clothing&amp;class=Shirts.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js1_catalog_search?division=Men&amp;department=Clothing&amp;class=Shirts.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js1_catalog_search?division=Men&amp;department=Clothing.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js1_catalog_search?division=Men&amp;department=Clothing.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js1_catalog_search?division=Men.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js1_catalog_search?division=Men.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js2_catalog_search?division=Men&amp;department=Clothing&amp;class=Shirts&amp;subclass=Casual&amp;colors[]=Black&amp;sizes[]=M.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js2_catalog_search?division=Men&amp;department=Clothing&amp;class=Shirts&amp;subclass=Casual&amp;colors[]=Black&amp;sizes[]=M.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js2_catalog_search?division=Men&amp;department=Clothing&amp;class=Shirts&amp;subclass=Casual&amp;colors[]=Black.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js2_catalog_search?division=Men&amp;department=Clothing&amp;class=Shirts&amp;subclass=Casual&amp;colors[]=Black.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js2_catalog_search?division=Men&amp;department=Clothing&amp;class=Shirts&amp;subclass=Casual.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js2_catalog_search?division=Men&amp;department=Clothing&amp;class=Shirts&amp;subclass=Casual.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js2_catalog_search?division=Men&amp;department=Clothing&amp;class=Shirts.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js2_catalog_search?division=Men&amp;department=Clothing&amp;class=Shirts.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js2_catalog_search?division=Men&amp;department=Clothing.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js2_catalog_search?division=Men&amp;department=Clothing.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js2_catalog_search?division=Men.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/search_endpoint/js2_catalog_search?division=Men.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/sort_data_endpoint/js1_catalog_search_sort-data.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/sort_data_endpoint/js1_catalog_search_sort-data.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/sort_data_endpoint/js2_catalog_search_sort-data.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/catalog_search_api/sort_data_endpoint/js2_catalog_search_sort-data.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/shops_api_json/js1_shops.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/shops_api_json/js1_shops.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/shops_api_json/js1_shops?preview-date=2015_11_09.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/shops_api_json/js1_shops?preview-date=2015_11_09.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/shops_api_json/js2_shops.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/shops_api_json/js2_shops.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bin/data/jsonfiles/shops_api_json/js2_shops?preview-date=2015_11_09.json" afterPath="$PROJECT_DIR$/src/bin/data/jsonfiles/shops_api_json/js2_shops?preview-date=2015_11_09.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pageObjects/services/json.rb" afterPath="$PROJECT_DIR$/src/pageObjects/services/json.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pageObjects/workflow/after.rb" afterPath="$PROJECT_DIR$/src/pageObjects/workflow/after.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pageObjects/workflow/before.rb" afterPath="$PROJECT_DIR$/src/pageObjects/workflow/before.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pageObjects/workflow/commans.rb" afterPath="$PROJECT_DIR$/src/pageObjects/workflow/commans.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pageObjects/workflow/dashboard.rb" afterPath="$PROJECT_DIR$/src/pageObjects/workflow/dashboard.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pageObjects/workflow/datamapping.rb" afterPath="$PROJECT_DIR$/src/pageObjects/workflow/datamapping.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pageObjects/workflow/editbusinessclassification.rb" afterPath="$PROJECT_DIR$/src/pageObjects/workflow/editbusinessclassification.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pageObjects/workflow/grid.rb" afterPath="$PROJECT_DIR$/src/pageObjects/workflow/grid.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pageObjects/workflow/login.rb" afterPath="$PROJECT_DIR$/src/pageObjects/workflow/login.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pageObjects/workflow/searchstylespageobject.rb" afterPath="$PROJECT_DIR$/src/pageObjects/workflow/searchstylespageobject.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pageObjects/workflow/singleStyleEdit.rb" afterPath="$PROJECT_DIR$/src/pageObjects/workflow/singleStyleEdit.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pageObjects/workflow/spreadsheetimport.rb" afterPath="$PROJECT_DIR$/src/pageObjects/workflow/spreadsheetimport.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pageObjects/workflow/stylegridpageobject.rb" afterPath="$PROJECT_DIR$/src/pageObjects/workflow/stylegridpageobject.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/service/api/brandsapi.rb" afterPath="$PROJECT_DIR$/tests/service/api/brandsapi.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/service/api/catalogsearchapi.rb" afterPath="$PROJECT_DIR$/tests/service/api/catalogsearchapi.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/service/api/eventsapi.rb" afterPath="$PROJECT_DIR$/tests/service/api/eventsapi.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/service/api/membercartapi.rb" afterPath="$PROJECT_DIR$/tests/service/api/membercartapi.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/service/api/ordersapi.rb" afterPath="$PROJECT_DIR$/tests/service/api/ordersapi.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/service/api/shopsapi.rb" afterPath="$PROJECT_DIR$/tests/service/api/shopsapi.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/workflow/web/import_file_scenarios/autoadjustsizeswithdecimalpointzerotest.rb" afterPath="$PROJECT_DIR$/tests/workflow/web/import_file_scenarios/autoadjustsizeswithdecimalpointzerotest.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/workflow/web/import_file_scenarios/ignoresizefromspreadsheettest.rb" afterPath="$PROJECT_DIR$/tests/workflow/web/import_file_scenarios/ignoresizefromspreadsheettest.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/workflow/web/import_file_scenarios/ignoreweightfromspreadsheettest.rb" afterPath="$PROJECT_DIR$/tests/workflow/web/import_file_scenarios/ignoreweightfromspreadsheettest.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/workflow/web/import_file_scenarios/importfiles.rb" afterPath="$PROJECT_DIR$/tests/workflow/web/import_file_scenarios/importfiles.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/workflow/web/import_file_scenarios/spreadSheetImportAllFieldsAutoMappingTest.rb" afterPath="$PROJECT_DIR$/tests/workflow/web/import_file_scenarios/spreadSheetImportAllFieldsAutoMappingTest.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/workflow/web/import_file_scenarios/spreadSheetImportWithMandatoryFieldsTest.rb" afterPath="$PROJECT_DIR$/tests/workflow/web/import_file_scenarios/spreadSheetImportWithMandatoryFieldsTest.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/workflow/web/import_file_scenarios/validatecoloranddefaultsizetest.rb" afterPath="$PROJECT_DIR$/tests/workflow/web/import_file_scenarios/validatecoloranddefaultsizetest.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/workflow/web/search_scenarios/viewSkusSortingTest.rb" afterPath="$PROJECT_DIR$/tests/workflow/web/search_scenarios/viewSkusSortingTest.rb" />
     </list>
     <ignored path="nightowl.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -144,11 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="multiEditSelectAndUnselectSearchTest.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="multiEditSelectAndUnselectSearchTest.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/workflow/web/search_scenarios/multiEditSelectAndUnselectSearchTest.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.52191234">
-              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nightowl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nightowl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.08964144">
+              <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -162,7 +62,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/nightowl" />
         <option value="$PROJECT_DIR$/src/pageObjects/workflow/commans.rb" />
         <option value="$PROJECT_DIR$/tests/workflow/web/search_scenarios/search_by_style_name.rb" />
         <option value="$PROJECT_DIR$/src/bin/data/workflow/web/search_scenarios/multiEditStyle.yaml" />
@@ -180,6 +79,7 @@
         <option value="$PROJECT_DIR$/tests/workflow/web/search_scenarios/emptySearch.rb" />
         <option value="$PROJECT_DIR$/tests/workflow/web/search_scenarios/exportTest.rb" />
         <option value="$PROJECT_DIR$/tests/workflow/web/search_scenarios/multiEditSelectAndUnselectSearchTest.rb" />
+        <option value="$PROJECT_DIR$/nightowl" />
       </list>
     </option>
   </component>
@@ -751,14 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nightowl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.3031497">
-          <caret line="124" column="30" selection-start-line="124" selection-start-column="30" selection-end-line="124" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pageObjects/workflow/before.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47244096">
@@ -961,8 +853,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/workflow/web/search_scenarios/multiEditSelectAndUnselectSearchTest.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52191234">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nightowl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08964144">
+          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="12" />
           <folding />
         </state>
       </provider>
