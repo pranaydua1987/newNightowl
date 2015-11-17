@@ -1,1 +1,5 @@
-{"code":501,"message":"Not Implemented","errors":null}
+{
+  "code": 501,
+  "message": "Not Implemented",
+  "errors": null
+}

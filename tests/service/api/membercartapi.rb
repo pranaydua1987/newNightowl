@@ -1,5 +1,4 @@
-
-mysql_client("10.224.5.188","hautelook","hautelook","hautelook")
+mysql_client("10.224.5.188", "hautelook", "hautelook", "hautelook")
 rs=$mysql_client.query("select  event_id ,style_id ,sku,quantity from events inner join events_styles using(event_id) inner join skus using(style_id)  where (Date(start_date) < CURRENT_DATE() and Date(end_date) > CURRENT_DATE() ) and event_status=50 and skus.quantity >1
  group by events_styles.event_id having count(events_styles.event_id >=1) order by end_date  limit 1")
 #puts rs
@@ -8,13 +7,13 @@ active_event_id=String.new
 active_style_id=String.new
 active_sku=String.new
 active_quantity=String.new
- rs.each do |print_rows|
-puts  "event_id:#{print_rows["event_id"]}"
+rs.each do |print_rows|
+  puts "event_id:#{print_rows["event_id"]}"
 
-active_event_id=print_rows["event_id"].to_s
-active_style_id=print_rows["style_id"].to_s
-active_sku=print_rows["sku"].to_s
-active_quantity=print_rows["quantity"].to_s
+  active_event_id=print_rows["event_id"].to_s
+  active_style_id=print_rows["style_id"].to_s
+  active_sku=print_rows["sku"].to_s
+  active_quantity=print_rows["quantity"].to_s
 end
 puts "Event_id:  #{active_event_id}"
 puts "Style_id: #{active_style_id}"
@@ -47,28 +46,28 @@ puts "Sku : #{active_sku}"
 # puts $test_data['auth']
 # puts $test_data['auth_code']
 j=0
-while(j <$test_data['Post_api_endpoints'].size) do
+while (j <$test_data['Post_api_endpoints'].size) do
 
-puts $test_data['Post_api_endpoints'][0]
+  puts $test_data['Post_api_endpoints'][0]
 #puts $test_data['api_endpoint'].size
-if ("#{$test_data['Post_api_endpoints'][j]}".include? "member_id")
- #puts "Pd"
- #search_parameter=$test_data['search_query']
-$test_data['Post_api_endpoints'][j]=$test_data['Post_api_endpoints'][j].gsub("member_id","#{$test_data['member_id']}")
-puts $test_data['Post_api_endpoints'][j]
-#puts $test_data['api_endpoint'][i]
-end
-res1=Brand_api.Login($test_data['base_url'][0],$test_data['username'],$test_data['password'],$test_data['auth'],$test_data['auth_code'])
-puts res1
+  if ("#{$test_data['Post_api_endpoints'][j]}".include? "member_id")
+    #puts "Pd"
+    #search_parameter=$test_data['search_query']
+    $test_data['Post_api_endpoints'][j]=$test_data['Post_api_endpoints'][j].gsub("member_id", "#{$test_data['member_id']}")
+    puts $test_data['Post_api_endpoints'][j]
+    #puts $test_data['api_endpoint'][i]
+  end
+  res1=Brand_api.Login($test_data['base_url'][0], $test_data['username'], $test_data['password'], $test_data['auth'], $test_data['auth_code'])
+  puts res1
 
-Brand_api.add_cart_item($test_data['base_url'][0],$test_data['Post_api_endpoints'][j],$test_data['auth'],$test_data['auth_code'],$test_data['cont_type'],
- $test_data['cont_type_code'],active_event_id,active_sku,"1")
- #puts res2.code
+  Brand_api.add_cart_item($test_data['base_url'][0], $test_data['Post_api_endpoints'][j], $test_data['auth'], $test_data['auth_code'], $test_data['cont_type'],
+                          $test_data['cont_type_code'], active_event_id, active_sku, "1")
+#puts res2.code
 # res = Brand_api.request($test_data['base_url'][0],$test_data['api_endpoint'][i],$test_data['auth'],$test_data['auth_code'],$test_data['cont_type'],
 # $test_data['cont_type_code'],$test_data['username'],$test_data['password'])
-end_point_filename=$test_data['Post_api_endoints'][j].to_s.gsub("/","_")
-puts end_point_filename
-Json_Functions.createJSONFile("#{$data_path}jsonfiles/Member_cart_Json/js1#{end_point_filename}.json",res2)
+  end_point_filename=$test_data['Post_api_endoints'][j].to_s.gsub("/", "_")
+  puts end_point_filename
+  Json_Functions.createJSONFile("#{$data_path}jsonfiles/Member_cart_Json/js1#{end_point_filename}.json", res2)
 # res2=Brand_api.Login($test_data['base_url'][1],$test_data['username'],$test_data['password'],$test_data['auth'],$test_data['auth_code'])
 #
 # res3 = Brand_api.request($test_data['base_url'][1],$test_data['api_endpoint'][i],$test_data['auth'],$test_data['auth_code'],$test_data['cont_type'],
@@ -88,7 +87,7 @@ Json_Functions.createJSONFile("#{$data_path}jsonfiles/Member_cart_Json/js1#{end_
 # puts res.code
 # puts "resposne body:"+res.body.to_s
 # puts "resposne message:"+res.message.to_s
-j=j+1
+  j=j+1
 end
 #  i=0
 #  while(i <$test_data['api_endpoint'].size) do

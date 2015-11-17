@@ -13,20 +13,20 @@ class Dashboard
     # $browser.a(:href =>"/reports").exist?
     # browser.h1(:xpath, "//a[contains(text(),\"Dashboard\")]").exist?
   end
-<<<<<<< HEAD
+
   def self.styles
     $method = __method__
     return $browser.a(:text => "Styles")
-    
+
   end
-=======
->>>>>>> 636a36c178c24232f2a1aac73363ee085e0d6ba1
+
   def self.table
-  return $browser.element(:xpath => "//table")
-end
+    return $browser.element(:xpath => "//table")
+  end
+
   def self.icons_check
     $method = __method__
-    $browser.i(:class => "fa fa-search").wait_until_present(15)#Search icon
+    $browser.i(:class => "fa fa-search").wait_until_present(15) #Search icon
     $browser.i(:class => "fa fa-certificate").wait_until_present(15) #Brand icon
     $browser.i(:class => "fa fa-tag").wait_until_present(15) #Styles icon
     $browser.i(:class => "fa fa-bar-chart-o").wait_until_present(15) # REports Icon
@@ -37,9 +37,10 @@ end
     # $browser.a(:href =>"/reports").exist?
     # browser.h1(:xpath, "//a[contains(text(),\"Dashboard\")]").exist?
   end
+
   def self.logout
     $method = __method__
- $browser.a(:href => "/logout").click
-  $browser.button(:text => "Sign In").wait_until_present(20)
+    $browser.a(:href => "/logout").click
+    $browser.button(:text => "Sign In").wait_until_present(20)
   end
 end

@@ -1,59 +1,59 @@
-class Datamapping
+class DataMapping
 
   def self.map_columns
-      $method = __method__
-    return $browser.button(:text =>"Map Columns")
+    $method = __method__
+    return $browser.button(:text => "Map Columns")
   end
-  def self.select_some_select_field(label,value)
-      $method = __method__
+
+  def self.select_some_select_field(label, value)
+    $method = __method__
     list_p = $browser.label(:text => "#{label}").parent
     list_p.select_list.select "#{value}"
   end
+
   def self.select_some_text_field(label)
-      $method = __method__
-  input_field_parent = $browser.label(:text => "#{label}").parent
-  puts input_field_parent.text_field.visible?
+    $method = __method__
+    input_field_parent = $browser.label(:text => "#{label}").parent
+    puts input_field_parent.text_field.visible?
     return input_field_parent.text_field
   end
+
   def self.error_message(message)
-      $method = __method__
-      sleep 7
+    $method = __method__
+    sleep 7
     #  browser.text.include?
     puts $browser.text.include? message
-    if($browser.text.include? message)
-return "pass"
-else
-  return "fail"
-end
+    if ($browser.text.include? message)
+      return "pass"
+    else
+      return "fail"
+    end
 
     #return input_field_parent.text_field
   end
 
-def self.verify_field_mapping(field,value)
+  def self.verify_field_mapping(field, value)
     $method = __method__
     label = $browser.label(:text => "#{field}").parent
     selected_val = label.select_list.selected_options.map(&:text)
     selected_val = selected_val.join(",")
     # puts "UI #{selected_val}"
     # puts value
-    assert_equal(selected_val,value )
+    assert_equal(selected_val, value)
+  end
+
+  def self.maprequiredfieldscorrectly
+    $method = __method__
+    $browser.select_list(:id => "import_map_brandIndex").select 'Brand'
+    $browser.select_list(:id => "import_map_styleNumIndex").select 'style_num'
+    $browser.select_list(:id => "import_map_sizeIndex").select 'size'
+    $browser.select_list(:id => "import_map_colorIndex").select 'color'
+    $browser.select_list(:id => "import_map_businessDivisionIdIndex").select 'Business Division Id'
+    $browser.select_list(:id => "import_map_businessDepartmentIdIndex").select 'Business Department Id'
+    $browser.select_list(:id => "import_map_businessClassIdIndex").select 'Business Class Id'
+    $browser.select_list(:id => "import_map_businessSubclassIdIndex").select 'Business Subclass Id'
+  end
 end
-def self.maprequiredfieldscorrectly
-  $method = __method__
-  $browser.select_list(:id => "import_map_brandIndex").select 'Brand'
-  $browser.select_list(:id => "import_map_styleNumIndex").select 'style_num'
-  $browser.select_list(:id => "import_map_sizeIndex").select 'size'
-  $browser.select_list(:id => "import_map_colorIndex").select 'color'
-  $browser.select_list(:id => "import_map_businessDivisionIdIndex").select 'Business Division Id'
-  $browser.select_list(:id => "import_map_businessDepartmentIdIndex").select 'Business Department Id'
-  $browser.select_list(:id => "import_map_businessClassIdIndex").select 'Business Class Id'
-  $browser.select_list(:id => "import_map_businessSubclassIdIndex").select 'Business Subclass Id'
-end
-end
-
-
-
-
 
 
 #

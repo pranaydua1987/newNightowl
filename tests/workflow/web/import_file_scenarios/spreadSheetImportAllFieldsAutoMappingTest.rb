@@ -1,34 +1,34 @@
-Login.initialize_browser($config['browserff'],$config['qa_url'])
-Login.login_workflow($config['username'],$config['password'])
+Login.initialize_browser($config['browserff'], $config['qa_url'])
+Login.login_workflow($config['username'], $config['password'])
 Dashboard.links_check
 Dashboard.icons_check
-Spreadsheetimport.importSpreadsheet($test_data['filename'])
+SpreadSheetImport.importSpreadsheet($test_data['filename'])
 
 
 puts "style f: #{$test_data['style_fields']}"
 
 
-$test_data['style_fields'].each do |key,val|
-    Datamapping.verify_field_mapping(key,val)
+$test_data['style_fields'].each do |key, val|
+  DataMapping.verify_field_mapping(key, val)
 end
 
 
-$test_data['SKU_Fields'].each do |key,val|
+$test_data['SKU_Fields'].each do |key, val|
 
-    Datamapping.verify_field_mapping(key,val)
-  end
-$test_data['Inventory_fields'].each do |key,val|
+  DataMapping.verify_field_mapping(key, val)
+end
+$test_data['Inventory_fields'].each do |key, val|
 
-    Datamapping.verify_field_mapping(key,val)
-  end
+  DataMapping.verify_field_mapping(key, val)
+end
 
-$test_data['Business_Classification_Fields'].each do |key,val|
+$test_data['Business_Classification_Fields'].each do |key, val|
 
-    Datamapping.verify_field_mapping(key,val)
-  end
-Spreadsheetimport.mapColumns
+  DataMapping.verify_field_mapping(key, val)
+end
+SpreadSheetImport.mapColumns
 Stylesgridpageobject.spreadSheetUploadMessage($test_data['filename'])
-Comman.verifySkuCountAndStatusOfStyle(1,"New",2,0)
+Comman.verifySkuCountAndStatusOfStyle(1, "New", 2, 0)
 Stylesgridpageobject.editStylesBtn(1).present?
 Stylesgridpageobject.editStylesBtn(1).click
 styleInfo=Hash.new
@@ -51,7 +51,7 @@ puts Stylesgridpageobject.successful_style_creation.wait_until_present(20)
 #Stylesgridpageobject.getStyleGridElement(createNewStylesButtonDisabled).wait_until_present(20)
 #puts "disabled create new style button"+Stylesgridpageobject.getStyleGridElement(createNewStylesButtonDisabled).visible?
 
-mysql_client("10.224.5.188","hautelook","hautelook","hautelook")
+mysql_client("10.224.5.188", "hautelook", "hautelook", "hautelook")
 query="select * from styles s inner join brands b using(brand_id) where s.style_num ='#{styleInfo["styleNumber"]}' and brand ='#{styleInfo["brand"]}'"
 puts query
 Comman.verifyStyleRows(styleInfo)

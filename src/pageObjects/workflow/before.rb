@@ -1,18 +1,18 @@
 #! /usr/bin/env ruby
 
- class Before
-   def self.initialize
+class Before
+  def self.initialize
     $method = __method__
     path_here = File.expand_path("..", Dir.pwd)
     puts "path from pls #{path_here}"
     @driver_path="#{path_here}/src/binary/phantomjs"
     # Selenium::WebDriver::Chrome.driver_path = driver_path
     Selenium::WebDriver::PhantomJS.path = driver_path
-   end
+  end
 
-   def self.initialize_browser(browser,url)
-     $method = __method__
-<<<<<<< HEAD
+  def self.initialize_browser(browser, url)
+    $method = __method__
+
 #      download_directory = "#{Dir.pwd}/downloads"
 # download_directory.gsub!("/", "\\") if Selenium::WebDriver::Platform.windows?
 #
@@ -22,22 +22,21 @@
 # profile['browser.helperApps.neverAsk.saveToDisk'] = "text/csv,application/pdf"
 #
 # b = Watir::Browser.new :firefox, :profile => profile
-=======
->>>>>>> 636a36c178c24232f2a1aac73363ee085e0d6ba1
-     $browser = Watir::Browser.new :"#{browser}"
-     $browser.goto url
-     $browser.a(:text => "Sign In").wait_until_present
-   end
 
-   def self.login_hautelook(username,password)
-     $method = __method__
-     $browser.a(:text => "Sign In").when_present.click
-     $browser.text_field(:id => "login_email").wait_until_present(20)
-     $browser.text_field(:id => "login_email").set username
-     $browser.text_field(:id => "login_password").set password
-     $browser.p(:text => "Sign In").click
-     $browser.span(:class => "secondary-nav__link secondary-nav__link--hautelook").wait_until_present(20)
-   end
+    $browser = Watir::Browser.new :"#{browser}"
+    $browser.goto url
+    $browser.a(:text => "Sign In").wait_until_present
+  end
+
+  def self.login_hautelook(username, password)
+    $method = __method__
+    $browser.a(:text => "Sign In").when_present.click
+    $browser.text_field(:id => "login_email").wait_until_present(20)
+    $browser.text_field(:id => "login_email").set username
+    $browser.text_field(:id => "login_password").set password
+    $browser.p(:text => "Sign In").click
+    $browser.span(:class => "secondary-nav__link secondary-nav__link--hautelook").wait_until_present(20)
+  end
 
   def self.get_jobid
     var = $browser.url
@@ -56,4 +55,4 @@
   #    $browser.select_list(:id => "country").select $config["country"]
   #    $browser.div(:id => "register_btn").click
   #  end
- end
+end
